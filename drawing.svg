@@ -1,0 +1,856 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)"
+   sodipodi:docname="drawing.svg">
+  <defs
+     id="defs2">
+    <rect
+       x="197.11458"
+       y="112.25893"
+       width="75.595238"
+       height="36.096726"
+       id="rect1020" />
+    <rect
+       x="-176.89286"
+       y="83.154762"
+       width="111.125"
+       height="125.11012"
+       id="rect927" />
+    <rect
+       x="-73.327381"
+       y="-1.5119048"
+       width="53.294643"
+       height="36.285714"
+       id="rect1883" />
+    <rect
+       x="-60.476191"
+       y="57.830357"
+       width="25.702381"
+       height="19.276786"
+       id="rect1843" />
+    <marker
+       style="overflow:visible;"
+       id="Arrow2Lend"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend"
+       inkscape:isstock="true">
+      <path
+         transform="scale(1.1) rotate(180) translate(1,0)"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#000000;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         id="path1076" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow2Lend-5"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path1076-1" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="815.26696"
+     inkscape:cy="492.06243"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:snap-bbox="false"
+     inkscape:snap-bbox-edge-midpoints="false"
+     inkscape:bbox-paths="false"
+     inkscape:bbox-nodes="false"
+     inkscape:snap-nodes="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     showguides="false"
+     showborder="false">
+    <inkscape:grid
+       type="xygrid"
+       id="grid1569" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:1.065;stroke-linecap:round;stroke-opacity:0.779116;stroke-miterlimit:4;stroke-dasharray:4.26,8.52;stroke-dashoffset:0"
+       id="rect108"
+       width="156.10417"
+       height="84.666664"
+       x="26.836309"
+       y="4.5357141" />
+    <g
+       id="g19"
+       transform="translate(21.166667,-4.1577381)">
+      <rect
+         style="fill:#ffaaaa;stroke:#000000;stroke-width:0.165;stroke-linecap:round;stroke-opacity:0.779116"
+         id="rect10"
+         width="43.089287"
+         height="46.869045"
+         x="23.434525"
+         y="26.836309" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:3.52778px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         x="26.836309"
+         y="33.639881"
+         id="text14"><tspan
+           sodipodi:role="line"
+           id="tspan12"
+           x="26.836309"
+           y="33.639881"
+           style="font-size:3.52778px;stroke-width:0.264583">Arduino</tspan></text>
+    </g>
+    <g
+       id="g1122"
+       transform="translate(-0.53453905,6.6817382)">
+      <rect
+         style="fill:#ffaaaa;stroke:#000000;stroke-width:0.0811246;stroke-linecap:round;stroke-opacity:0.779116"
+         id="rect10-6"
+         width="43.173164"
+         height="11.307843"
+         x="113.35091"
+         y="15.07711" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:3.40145px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.255108"
+         x="112.59879"
+         y="22.238325"
+         id="text14-1"
+         transform="scale(1.0372471,0.9640904)"><tspan
+           sodipodi:role="line"
+           id="tspan12-2"
+           x="112.59879"
+           y="22.238325"
+           style="font-size:3.40145px;stroke-width:0.255108">Screen</tspan></text>
+    </g>
+    <g
+       id="g1117"
+       transform="translate(0,8.8198944)">
+      <rect
+         style="fill:#ffaaaa;stroke:#000000;stroke-width:0.085764;stroke-linecap:round;stroke-opacity:0.779116"
+         id="rect10-6-4"
+         width="43.168522"
+         height="12.639551"
+         x="112.55143"
+         y="49.051434" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:3.52778px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         x="116.79464"
+         y="56.69643"
+         id="text14-1-5"><tspan
+           sodipodi:role="line"
+           id="tspan12-2-1"
+           x="116.79464"
+           y="56.69643"
+           style="font-size:3.52778px;stroke-width:0.264583">Keypad</tspan></text>
+    </g>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.616284;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:2.46513, 4.93028;stroke-dashoffset:0;stroke-opacity:0.779116"
+       id="rect108-9"
+       width="71.948166"
+       height="61.513397"
+       x="3.4119267"
+       y="120.58454" />
+    <rect
+       style="fill:#ffaaaa;stroke:#000000;stroke-width:0.117247;stroke-linecap:round;stroke-opacity:0.779116"
+       id="rect10-7"
+       width="42.552208"
+       height="23.964397"
+       x="6.5846972"
+       y="122.69036" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.52778px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="9.9517336"
+       y="129.95918"
+       id="text14-3"><tspan
+         sodipodi:role="line"
+         id="tspan12-23"
+         x="9.9517336"
+         y="129.95918"
+         style="font-size:3.52778px;stroke-width:0.264583">Arduino</tspan><tspan
+         sodipodi:role="line"
+         x="9.9517336"
+         y="134.36891"
+         style="font-size:3.52778px;stroke-width:0.264583"
+         id="tspan1041">i2c slave</tspan><tspan
+         sodipodi:role="line"
+         x="9.9517336"
+         y="138.77864"
+         style="font-size:3.52778px;stroke-width:0.264583"
+         id="tspan1043">temp monitor </tspan><tspan
+         sodipodi:role="line"
+         x="9.9517336"
+         y="143.18837"
+         style="font-size:3.52778px;stroke-width:0.264583"
+         id="tspan1047">&amp; fan speed</tspan></text>
+    <path
+       style="fill:none;stroke:#00df00;stroke-width:1.00000003;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:1.00000003, 1.00000003000000004;stroke-dashoffset:0"
+       d="M 87.690475,45.357142 H 101.67559 V 27.214285 h 11.71727"
+       id="path1439" />
+    <path
+       style="fill:none;stroke:#00df00;stroke-width:1.00000003;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:1.00000003, 1.00000003000000004;stroke-dashoffset:0"
+       d="M 101.67559,45.357142 V 63.877975 H 112.6369"
+       id="path1441" />
+    <path
+       style="fill:none;stroke:#00df00;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1, 1;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 101.67559,63.877975 0,69.547615 -52.160709,0.37798"
+       id="path1443"
+       sodipodi:nodetypes="ccc" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.984233;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:3.93692, 7.87386;stroke-dashoffset:0;stroke-opacity:0.779116"
+       id="rect108-9-6"
+       width="156.18494"
+       height="72.274223"
+       x="123.33438"
+       y="107.42492" />
+    <g
+       id="g984">
+      <rect
+         style="fill:#ffaaaa;stroke:#000000;stroke-width:0.0814152;stroke-linecap:round;stroke-opacity:0.779116"
+         id="rect10-6-4-7"
+         width="52.622276"
+         height="9.3439732"
+         x="125.90678"
+         y="128.12971" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:3.45176px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.258882"
+         x="126.73906"
+         y="136.49803"
+         id="text14-1-5-9"
+         transform="scale(1.0220859,0.97839133)"><tspan
+           sodipodi:role="line"
+           id="tspan12-2-1-0"
+           x="126.73906"
+           y="136.49803"
+           style="font-size:3.45176px;stroke-width:0.258882">portexpander/relays/solanoids</tspan><tspan
+           sodipodi:role="line"
+           x="126.73906"
+           y="140.81273"
+           style="font-size:3.45176px;stroke-width:0.258882"
+           id="tspan977" /><tspan
+           sodipodi:role="line"
+           x="126.73906"
+           y="145.12743"
+           style="font-size:3.45176px;stroke-width:0.258882"
+           id="tspan1527" /></text>
+    </g>
+    <g
+       id="g975"
+       transform="translate(0,1.1339286)">
+      <rect
+         style="fill:#ffaaaa;stroke:#000000;stroke-width:0.0788038;stroke-linecap:round;stroke-opacity:0.779116"
+         id="rect10-6-4-7-5"
+         width="43.175484"
+         height="10.669527"
+         x="125.14953"
+         y="160.97784" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:3.52778px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         x="127.46048"
+         y="166.87958"
+         id="text14-1-5-9-0"><tspan
+           sodipodi:role="line"
+           id="tspan12-2-1-0-8"
+           x="127.46048"
+           y="166.87958"
+           style="font-size:3.52778px;stroke-width:0.264583">portexpander/sensors</tspan><tspan
+           sodipodi:role="line"
+           x="127.46048"
+           y="171.28931"
+           style="font-size:3.52778px;stroke-width:0.264583"
+           id="tspan1527-3" /></text>
+    </g>
+    <path
+       style="fill:none;stroke:#00df00;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:2,1;stroke-dashoffset:0"
+       d="m 101.29762,131.91369 v 4.91369 h 24.94643"
+       id="path1571" />
+    <path
+       style="fill:none;stroke:#00df00;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:2,1;stroke-dashoffset:0"
+       d="m 101.29762,136.82738 v 26.08036 h 24.94643"
+       id="path1573" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:1.08282;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:4.33128, 8.66257;stroke-dashoffset:0;stroke-opacity:0.779116"
+       id="rect108-9-6-1"
+       width="153.73961"
+       height="88.870117"
+       x="123.98627"
+       y="186.59453" />
+    <g
+       id="g1711">
+      <rect
+         style="fill:#ffaaaa;stroke:#000000;stroke-width:0.186435;stroke-linecap:round;stroke-opacity:0.779116"
+         id="rect10-6-4-7-4"
+         width="65.787903"
+         height="39.192287"
+         x="128.22646"
+         y="203.09558" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:3.34965px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.251223"
+         x="122.91083"
+         y="217.6685"
+         id="text14-1-5-9-6"
+         transform="scale(1.0532812,0.94941407)"><tspan
+           sodipodi:role="line"
+           id="tspan12-2-1-0-7"
+           x="122.91083"
+           y="217.6685"
+           style="font-size:3.34965px;stroke-width:0.251223">Arduino, for self control</tspan><tspan
+           sodipodi:role="line"
+           x="122.91083"
+           y="221.85556"
+           style="font-size:3.34965px;stroke-width:0.251223"
+           id="tspan1012">portexpander or io /relays</tspan><tspan
+           sodipodi:role="line"
+           x="122.91083"
+           y="226.04263"
+           style="font-size:3.34965px;stroke-width:0.251223"
+           id="tspan1643">for Maisn lighting </tspan><tspan
+           sodipodi:role="line"
+           x="122.91083"
+           y="230.22969"
+           style="font-size:3.34965px;stroke-width:0.251223"
+           id="tspan1647">and heating</tspan><tspan
+           sodipodi:role="line"
+           x="122.91083"
+           y="234.41675"
+           style="font-size:3.34965px;stroke-width:0.251223"
+           id="tspan1014">allow local buttons to toggle state</tspan><tspan
+           sodipodi:role="line"
+           x="122.91083"
+           y="238.60382"
+           style="font-size:3.34965px;stroke-width:0.251223"
+           id="tspan1016" /><tspan
+           sodipodi:role="line"
+           x="122.91083"
+           y="242.79088"
+           style="font-size:3.34965px;stroke-width:0.251223"
+           id="tspan1645" /><tspan
+           sodipodi:role="line"
+           x="122.91083"
+           y="246.97794"
+           style="font-size:3.34965px;stroke-width:0.251223"
+           id="tspan1527-8" /></text>
+    </g>
+    <path
+       style="fill:none;stroke:#00df00;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2, 1;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 101.29763,162.90774 v 43.84524 h 26.08036"
+       id="path1649" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.618381;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:2.47352, 4.94704;stroke-dashoffset:0;stroke-opacity:0.779116"
+       id="rect108-9-6-1-5"
+       width="82.843086"
+       height="53.787708"
+       x="0.91178709"
+       y="212.74306" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="48.758926"
+       y="16.630953"
+       id="text1673"><tspan
+         sodipodi:role="line"
+         id="tspan1671"
+         x="48.758926"
+         y="16.630953"
+         style="stroke-width:0.264583">pannel</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="15.119047"
+       y="164.79761"
+       id="text1677"><tspan
+         sodipodi:role="line"
+         id="tspan1675"
+         x="15.119047"
+         y="164.79761"
+         style="stroke-width:0.264583">air</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="150.43452"
+       y="118.30654"
+       id="text1681"><tspan
+         sodipodi:role="line"
+         id="tspan1679"
+         x="150.43452"
+         y="118.30654"
+         style="stroke-width:0.264583">water</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="141.3631"
+       y="196.54762"
+       id="text1685"><tspan
+         sodipodi:role="line"
+         id="tspan1683"
+         x="141.3631"
+         y="196.54762"
+         style="stroke-width:0.264583">light/heat</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="23.358158"
+       y="223.99554"
+       id="text1681-4"><tspan
+         sodipodi:role="line"
+         id="tspan1679-7"
+         x="23.358158"
+         y="223.99554"
+         style="stroke-width:0.264583">food</tspan></text>
+    <rect
+       style="fill:#ffaaaa;stroke:#000000;stroke-width:0.117247;stroke-linecap:round;stroke-opacity:0.779116"
+       id="rect10-7-2"
+       width="42.552208"
+       height="23.964397"
+       x="4.8042536"
+       y="228.41064" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.52778px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="6.0281711"
+       y="231.73976"
+       id="text14-3-7"><tspan
+         sodipodi:role="line"
+         id="tspan12-23-8"
+         x="6.0281711"
+         y="231.73976"
+         style="font-size:3.52778px;stroke-width:0.264583">Arduino</tspan><tspan
+         sodipodi:role="line"
+         x="6.0281711"
+         y="236.14949"
+         style="font-size:3.52778px;stroke-width:0.264583"
+         id="tspan1041-0">i2c slave</tspan><tspan
+         sodipodi:role="line"
+         x="6.0281711"
+         y="240.5592"
+         style="font-size:3.52778px;stroke-width:0.264583"
+         id="tspan1047-5">dispence food on command </tspan><tspan
+         sodipodi:role="line"
+         x="6.0281711"
+         y="244.96893"
+         style="font-size:3.52778px;stroke-width:0.264583"
+         id="tspan1938">and local control</tspan><tspan
+         sodipodi:role="line"
+         x="6.0281711"
+         y="249.37866"
+         style="font-size:3.52778px;stroke-width:0.264583"
+         id="tspan1837" /></text>
+    <text
+       xml:space="preserve"
+       id="text1841"
+       style="fill:black;fill-opacity:1;line-height:1.25;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:10.58333333px;white-space:pre;shape-inside:url(#rect1843);" />
+    <rect
+       style="fill:#ffaaaa;stroke:#000000;stroke-width:0.085469;stroke-linecap:round;stroke-opacity:0.779116"
+       id="rect10-6-4-7-52"
+       width="43.168816"
+       height="12.552717"
+       x="-65.807617"
+       y="12.622444" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.45176px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.258882"
+       x="-60.649731"
+       y="19.596586"
+       id="text14-1-5-9-4"
+       transform="scale(1.0220859,0.97839134)"><tspan
+         sodipodi:role="line"
+         id="tspan12-2-1-0-0"
+         x="-60.649731"
+         y="19.596586"
+         style="font-size:3.45176px;stroke-width:0.258882">Buzzer</tspan><tspan
+         sodipodi:role="line"
+         x="-60.649731"
+         y="23.911285"
+         style="font-size:3.45176px;stroke-width:0.258882"
+         id="tspan1879" /><tspan
+         sodipodi:role="line"
+         x="-60.649731"
+         y="28.225986"
+         style="font-size:3.45176px;stroke-width:0.258882"
+         id="tspan1527-1" /></text>
+    <text
+       xml:space="preserve"
+       id="text1881"
+       style="fill:black;fill-opacity:1;line-height:1.25;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:10.58333333px;white-space:pre;shape-inside:url(#rect1883);" />
+    <rect
+       style="fill:#ffaaaa;stroke:#000000;stroke-width:0.085469;stroke-linecap:round;stroke-opacity:0.779116"
+       id="rect10-6-4-7-52-7"
+       width="43.168816"
+       height="12.552717"
+       x="-65.429649"
+       y="29.253403" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.45176px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.258882"
+       x="-60.279926"
+       y="36.594856"
+       id="text14-1-5-9-4-3"
+       transform="scale(1.0220859,0.97839134)"><tspan
+         sodipodi:role="line"
+         id="tspan12-2-1-0-0-8"
+         x="-60.279926"
+         y="36.594856"
+         style="font-size:3.45176px;stroke-width:0.258882">Light</tspan><tspan
+         sodipodi:role="line"
+         x="-60.279926"
+         y="40.909557"
+         style="font-size:3.45176px;stroke-width:0.258882"
+         id="tspan1879-7" /><tspan
+         sodipodi:role="line"
+         x="-60.279926"
+         y="45.224255"
+         style="font-size:3.45176px;stroke-width:0.258882"
+         id="tspan1527-1-5" /></text>
+    <text
+       xml:space="preserve"
+       id="text925"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect927);fill:#000000;fill-opacity:1;stroke:none;"><tspan
+         x="-176.89258"
+         y="92.809762"><tspan>Overall Mission
+</tspan></tspan><tspan
+         x="-176.89258"
+         y="106.03889"><tspan>Regulate FD Beds
+</tspan></tspan><tspan
+         x="-176.89258"
+         y="119.26801"><tspan>Regulate Temp and </tspan></tspan><tspan
+         x="-176.89258"
+         y="132.49714"><tspan>Humidity with fans, </tspan></tspan><tspan
+         x="-176.89258"
+         y="145.72627"><tspan>heaters, and misters
+</tspan></tspan><tspan
+         x="-176.89258"
+         y="158.95539"><tspan>regulate lights, feed </tspan></tspan><tspan
+         x="-176.89258"
+         y="172.18452"><tspan>fish, show stats, and </tspan></tspan><tspan
+         x="-176.89258"
+         y="185.41364"><tspan>raise alarms on </tspan></tspan><tspan
+         x="-176.89258"
+         y="198.64277"><tspan>issues
+</tspan></tspan><tspan
+         x="-176.89258"
+         y="211.8719"><tspan>
+</tspan></tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M -22.300595,16.252976 44.979166,31.75"
+       id="path967" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 44.223214,40.821427 -21.544642,30.616072"
+       id="path969" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M -21.544642,34.017857 44.60119,44.60119"
+       id="path971" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 45.735118,48.758927 -21.922619,37.419642"
+       id="path973" />
+    <g
+       id="g984-2"
+       transform="translate(0.10648982,12.530144)">
+      <rect
+         style="fill:#ffaaaa;stroke:#000000;stroke-width:0.0814152;stroke-linecap:round;stroke-opacity:0.779116"
+         id="rect10-6-4-7-0"
+         width="52.622276"
+         height="9.3439732"
+         x="125.90678"
+         y="128.12971" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:3.45176px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.258882"
+         x="126.73906"
+         y="136.49803"
+         id="text14-1-5-9-68"
+         transform="scale(1.0220859,0.97839133)"><tspan
+           sodipodi:role="line"
+           x="126.73906"
+           y="136.49803"
+           style="font-size:3.45176px;stroke-width:0.258882"
+           id="tspan1026">portexpander/relays/drain</tspan><tspan
+           sodipodi:role="line"
+           x="126.73906"
+           y="140.81273"
+           style="font-size:3.45176px;stroke-width:0.258882"
+           id="tspan1030" /><tspan
+           sodipodi:role="line"
+           x="126.73906"
+           y="145.12743"
+           style="font-size:3.45176px;stroke-width:0.258882"
+           id="tspan977-8" /><tspan
+           sodipodi:role="line"
+           x="126.73906"
+           y="149.44214"
+           style="font-size:3.45176px;stroke-width:0.258882"
+           id="tspan1527-0" /></text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:3.52777px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="173.1131"
+       y="155.91519"
+       id="text1034"><tspan
+         sodipodi:role="line"
+         id="tspan1032"
+         x="173.1131"
+         y="155.91519"
+         style="stroke-width:0.264583">3+2 FD beds</tspan><tspan
+         sodipodi:role="line"
+         x="173.1131"
+         y="160.32491"
+         style="stroke-width:0.264583"
+         id="tspan1036">3 water beds</tspan><tspan
+         sodipodi:role="line"
+         x="173.1131"
+         y="164.73462"
+         style="stroke-width:0.264583"
+         id="tspan1038">8 input</tspan><tspan
+         sodipodi:role="line"
+         x="173.1131"
+         y="169.14433"
+         style="stroke-width:0.264583"
+         id="tspan1040">5 output</tspan><tspan
+         sodipodi:role="line"
+         x="173.1131"
+         y="173.55405"
+         style="stroke-width:0.264583"
+         id="tspan1042">5 sensors</tspan></text>
+    <rect
+       style="fill:#ffaaaa;stroke:#000000;stroke-width:0.085469;stroke-linecap:round;stroke-opacity:0.779116"
+       id="rect10-6-4-7-52-7-1"
+       width="43.168816"
+       height="12.552717"
+       x="-51.066551"
+       y="153.98555" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.45176px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.258882"
+       x="-46.227192"
+       y="164.08182"
+       id="text14-1-5-9-4-3-6"
+       transform="scale(1.0220859,0.97839134)"><tspan
+         sodipodi:role="line"
+         id="tspan12-2-1-0-0-8-4"
+         x="-46.227192"
+         y="164.08182"
+         style="font-size:3.45176px;stroke-width:0.258882">Light</tspan><tspan
+         sodipodi:role="line"
+         x="-46.227192"
+         y="168.39653"
+         style="font-size:3.45176px;stroke-width:0.258882"
+         id="tspan1879-7-8" /><tspan
+         sodipodi:role="line"
+         x="-46.227192"
+         y="172.71123"
+         style="font-size:3.45176px;stroke-width:0.258882"
+         id="tspan1527-1-5-2" /></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 6.047619,128.5119 -8.6934523,161.39583 5.6696429,134.18155"
+       id="path1100" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M -8.6934523,163.66369 7.5595238,137.96131"
+       id="path1102" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.52777px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="35.624256"
+       y="152.70239"
+       id="text996"><tspan
+         sodipodi:role="line"
+         id="tspan994"
+         x="35.624256"
+         y="152.70239"
+         style="stroke-width:0.264583">OPS:</tspan><tspan
+         sodipodi:role="line"
+         x="35.624256"
+         y="157.11211"
+         style="stroke-width:0.264583"
+         id="tspan998">send min/max temp</tspan><tspan
+         sodipodi:role="line"
+         x="35.624256"
+         y="161.52182"
+         style="stroke-width:0.264583"
+         id="tspan1000">send min/max humidity</tspan><tspan
+         sodipodi:role="line"
+         x="35.624256"
+         y="165.93153"
+         style="stroke-width:0.264583"
+         id="tspan1002">send alarm status</tspan><tspan
+         sodipodi:role="line"
+         x="35.624256"
+         y="170.34125"
+         style="stroke-width:0.264583"
+         id="tspan1006">get temp</tspan><tspan
+         sodipodi:role="line"
+         x="35.624256"
+         y="174.75096"
+         style="stroke-width:0.264583"
+         id="tspan1004">get humidity</tspan><tspan
+         sodipodi:role="line"
+         x="35.624256"
+         y="179.16068"
+         style="stroke-width:0.264583"
+         id="tspan1126">get light amount</tspan></text>
+    <text
+       xml:space="preserve"
+       id="text1018"
+       style="font-size:3.52778px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect1020);"><tspan
+         x="197.11523"
+         y="115.47827"><tspan>ops:
+</tspan></tspan><tspan
+         x="197.11523"
+         y="119.888"><tspan>Set bed fill/drain 1-8(can skip drain)
+</tspan></tspan><tspan
+         x="197.11523"
+         y="124.29772"><tspan>trigger bed 1-8 now
+</tspan></tspan><tspan
+         x="197.11523"
+         y="128.70745"><tspan>get status for beds 1/8:
+</tspan></tspan><tspan
+         x="197.11523"
+         y="133.11718"><tspan>draining counter
+</tspan></tspan><tspan
+         x="197.11523"
+         y="137.52691"><tspan>filling
+</tspan></tspan><tspan
+         x="197.11523"
+         y="141.93664"><tspan>holding counter
+</tspan></tspan><tspan
+         x="197.11523"
+         y="146.34637"><tspan>
+</tspan></tspan><tspan
+         x="197.11523"
+         y="150.7561"><tspan>
+</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.52777px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="209.80656"
+       y="202.05576"
+       id="text1030"><tspan
+         sodipodi:role="line"
+         id="tspan1028"
+         x="209.80656"
+         y="202.05576"
+         style="stroke-width:0.264583">ops: </tspan><tspan
+         sodipodi:role="line"
+         x="209.80656"
+         y="206.46547"
+         style="stroke-width:0.264583"
+         id="tspan1033">set light(x) on or off</tspan><tspan
+         sodipodi:role="line"
+         x="209.80656"
+         y="210.87518"
+         style="stroke-width:0.264583"
+         id="tspan1035" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.52777px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="202.85756"
+       y="245.88795"
+       id="text1039"><tspan
+         sodipodi:role="line"
+         id="tspan1037"
+         x="202.85756"
+         y="245.88795"
+         style="stroke-width:0.264583">switches:</tspan><tspan
+         sodipodi:role="line"
+         x="202.85756"
+         y="250.29767"
+         style="stroke-width:0.264583"
+         id="tspan1046">8x growlights:</tspan><tspan
+         sodipodi:role="line"
+         x="202.85756"
+         y="254.70738"
+         style="stroke-width:0.264583"
+         id="tspan1048">heater</tspan><tspan
+         sodipodi:role="line"
+         x="202.85756"
+         y="259.1171"
+         style="stroke-width:0.264583"
+         id="tspan1050">seed lights</tspan><tspan
+         sodipodi:role="line"
+         x="202.85756"
+         y="263.52679"
+         style="stroke-width:0.264583"
+         id="tspan1044" /></text>
+    <g
+       id="g1098"
+       transform="translate(-1.0690781,60.670183)">
+      <rect
+         style="fill:#ffaaaa;stroke:#000000;stroke-width:0.0772109;stroke-linecap:round;stroke-opacity:0.779116"
+         id="rect10-6-4-76"
+         width="43.177074"
+         height="10.242259"
+         x="113.38258"
+         y="-20.756397" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:3.23173px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.24238"
+         x="106.99432"
+         y="-16.392014"
+         id="text14-1-5-4"
+         transform="scale(1.0918699,0.91586003)"><tspan
+           sodipodi:role="line"
+           id="tspan12-2-1-00"
+           x="106.99432"
+           y="-16.392014"
+           style="font-size:3.23173px;stroke-width:0.24238">real time clock</tspan></text>
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 112.78774,45.16855 -11.49259,0.801809"
+       id="path1124" />
+  </g>
+</svg>
