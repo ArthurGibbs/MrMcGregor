@@ -1,31 +1,23 @@
-
 #include <Wire.h>
 #include <PortExpander_I2C.h>
 #include <LiquidCrystal_I2C.h>
 #include <EEPROM.h>
+#include "Keypad.h"
 
-PortExpander_I2C keypad(0x21); //@39
-LiquidCrystal_I2C	lcd(0x27,2,1,0,4,5,6,7); //@ 27
-PortExpander_I2C relays(0x38); //@[38 - 40 hex 8 spaces
-PortExpander_I2C switches(0x25); //@[20-28]
-
+Keypad keypad = Keypad(0x21); //@39
+LiquidCrystal_I2C lcd(0x27,2,1,0,4,5,6,7); //@ 27
+PortExpander_I2C  relays(0x38); //@[38 - 40 hex 8 spaces
+PortExpander_I2C  switches(0x25); //@[20-28]
 
 // PINS
 byte buzzerPin = 11;
-
-//local led
 byte led_pin_r = 3;
 byte led_pin_g = 5;
 byte led_pin_b = 6;
 
 //*********************************************** Keypad
-const String keys[4][4] = {{"D","#","0","*"},{"C","9","8","7"},{"B","6","5","4"},{"A","3","2","1"}};//array for decoding matrix position to keypress
-int antiBounceLoops = 5;
-int antiBounceCounter = 0;
-String key_antiBounceMemory_key = "";
 String key_active = "";
-String key_number_buffer = "";
-bool key_number_buffer_active = false;
+
 
 //buzzer
 int buzzTimeout=0;
@@ -34,7 +26,7 @@ int buzzLoop = 1;
 int buzzLoopCurrent = 1;
 int buzzTone = 1;
 
-//flooddrain states
+//flood drain states
 int state_draining = 0;
 int state_filling = 1;
 int state_holding = 2;
@@ -50,6 +42,16 @@ int menuLevel = 0; //current height of menu
 String DrawnMenuStatus = ""; //used to remember if we need to draw new state to screen
 String menuItemStatus = ""; 
 int maxMenuIndex = 0; // used to limit generic loops
+
+const String menuMap[8][4] = {
+  {"0","Beds","C","00"},
+    {"00","Bed1","C","101"},
+      {"00","Bed1","C","101"},
+        {"000","Fill Time","C","0000"},
+        {"000","Drain Time","C","0001"},
+    {"01","Bed2","C","101"},
+    {"02","Bed3","C","101"},
+  {"1","Air","C","10"}};
 
 
 // memory positions int is 2 bytes
@@ -85,11 +87,12 @@ int timestep = 0;
 int secondParts = 0;
 
 void setup() {
+  Serial.println("");
+  Serial.println("Booting...");
   //led setup
   pinMode(led_pin_r, OUTPUT);
   pinMode(led_pin_g, OUTPUT);
   pinMode(led_pin_b, OUTPUT);
-  
   led(255,0,0);
 
   // buzzer	
@@ -102,7 +105,7 @@ void setup() {
   Wire.begin();//for i2c
   Wire.setClock(1000UL);
   
-  setup_keypad();
+  keypad.init();
   setup_lcd();
   setupFloodDrain();
   
@@ -119,17 +122,7 @@ void led(int r, int g, int b){
  analogWrite(led_pin_g, 255-g);  
  analogWrite(led_pin_b, 255-b);  
 }
-void setup_keypad(){
-  keypad.init();
-  for(int idx = 0; idx < 4; idx++ ) {
-    keypad.pinMode(idx,OUTPUT);
-    keypad.digitalWrite(idx, 0); 
-  }
-  for(int idx = 4; idx < 8; idx++ ) {
-    keypad.digitalWrite(idx, 0); 
-    keypad.pinMode(idx,INPUT);
-  }
-}
+
 void setup_lcd(){
   //activate LCD module
   lcd.begin (20,4); // for 16 x 2 LCD module
@@ -151,19 +144,23 @@ void setupFloodDrain(){
   }
 }
 void loadMemory(){
+   Serial.print("Loading memory..");
 	  //load in bed flood times
   for(int idx = 0; idx < 5; idx++ ) {
-    bedFloodTimes[idx] = EEPROM.get( memPOSbeds[idx], bedFloodTimes[idx]);
+    EEPROM.get( memPOSbeds[idx], bedFloodTimes[idx]);
   }
 
   //load in bed drain times
   for(int idx = 0; idx < 5; idx++ ) {
-    bedFloodTimes[idx] = EEPROM.get( memPOSbedDrain[idx], bedDrainTimes[idx]);
+    EEPROM.get( memPOSbedDrain[idx], bedDrainTimes[idx]);
   }
+  Serial.println("OK");
 }
 
 void loop() {
-  monitorKeypad();
+  
+  key_active = keypad.monitorKeypad();
+
   monitorScreen();
   monitorBuzzSound();
   monitorState();
@@ -241,8 +238,6 @@ void loop() {
   }
 
   
-  
-  
   delay(10);
 }
 
@@ -299,7 +294,7 @@ void monitorState(){
     }
     menuItemStatus = "";
     DrawnMenuStatus = "";
-    key_number_buffer_active = false;
+    keypad.disableNumeric();
   }
   
   if (menuLevel == 0){//home
@@ -414,14 +409,13 @@ void monitorState(){
       DrawnMenuStatus = getMenuId();
       lcd.clear();
       if (menuStack[3] == 0){
-        lcd.print("Menu>Beds>" + String(menuStack[2]+1) + ">Flood Time (s)"); 
+        bufferedWrite(0,0,"Menu>Bed>" + String(menuStack[2]+1) + ">FT(s)");
       }
       if (menuStack[3] == 1){
-        lcd.print("Menu>Beds>" + String(menuStack[2]+1) + ">Drain Time (s)"); 
+        bufferedWrite(0,0,"Menu>Bed>" + String(menuStack[2]+1) + ">DT(s)");
       }
       maxMenuIndex = 1;
-      key_number_buffer_active = true;
-      key_number_buffer = "";
+      keypad.clearNumeric();
 
       lcd.setCursor (2,1);
       lcd.print(*value); 
@@ -438,20 +432,24 @@ void monitorState(){
             EEPROM.put( *mempos, *value);
     }  
 
-    if (key_number_buffer != "") {
-            bufferedWrite(1,2,key_number_buffer);
+    if (keypad.getNumeric() != 0) {
+            bufferedWrite(1,2,String(keypad.getNumeric()));
             bufferedWrite(2,2,"Unsaved");
     }
 
     if(key_active == "C"){
-            if (key_number_buffer != "") {
-              *value = key_number_buffer.toInt();
-              key_number_buffer ="";
+            if (keypad.getNumeric() != 0) {
+              *value = keypad.getNumeric();
+              keypad.clearNumeric();
+              EEPROM.put( *mempos, *value);
+             
+              bufferedWrite(1,2,String(*value));
+              bufferedWrite(2,2,"Saved");
+              Serial.println("Saved");
+            } else {
+              Serial.println("NAN, not saving");
             }
-             EEPROM.put( *mempos, *value);
-            lcdClearRow(2);
-            lcd.setCursor (2,2);
-            lcd.print("Saved"); 
+
             
     }
   }
@@ -512,53 +510,8 @@ void monitorBuzzSound(){
       analogWrite(buzzerPin, 0);
   }
 }
-void monitorKeypad() {
-  key_active = "";
-  if (antiBounceCounter > 0) {
-    antiBounceCounter--;
-  } 
-  String currentKey = getKeyDown();
-  if(currentKey != "" && currentKey != key_antiBounceMemory_key){
-    //new key
-    key_antiBounceMemory_key = currentKey;
-    key_active = currentKey;
-    antiBounceCounter = antiBounceLoops;
-    buzzFor(2, 1, 0, 1);
-  } else if (antiBounceCounter == 0 && currentKey == "") {
-    key_antiBounceMemory_key = "";
-  }
 
 
-  if (key_number_buffer_active && key_active != "" && key_active != "A"&& key_active != "B"&& key_active != "C"&& key_active != "D"&& key_active != "#"&& key_active != "*"){
-    key_number_buffer = key_number_buffer + key_active;
-      //Serial.println(key_number_buffer);
-  }
-}
-String getKeyDown(){
-  String currentKey = "";
-   int currentKeysPressed = 0;
-      for(int idx = 0; idx < 4; idx++ ) {
-      keypad.digitalWrite(idx, 0); 
-      for(int idy = 0; idy < 4; idy++ ) {
-        if (keypad.digitalRead(idy + 4) == 0) {   
-             currentKey = keys[idx][idy];
-             currentKeysPressed++;
-        }
-      }
-      keypad.digitalWrite(idx, 1); 
-    }
-    if (currentKeysPressed > 1){
-      Serial.println("Multiple keypress!");
-      buzzFor(255, 10, 1, 3);
-      return "";
-    }
-    if (currentKeysPressed == 0){
-      return "";
-    }
-    if (currentKeysPressed == 1){
-      return currentKey;
-    }
-}
 void buzzFor(byte tone, byte ms,int t,int l){
   buzzLoop = l;
   buzzThreshhold = t;
