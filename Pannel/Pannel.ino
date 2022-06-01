@@ -3,14 +3,16 @@
 #include <LiquidCrystal_I2C.h>
 #include <EEPROM.h>
 #include "Keypad.h"
+#include "Buzzer.h"
 
-Keypad keypad = Keypad(0x21); //@39
+
+
 LiquidCrystal_I2C lcd(0x27,2,1,0,4,5,6,7); //@ 27
 PortExpander_I2C  relays(0x38); //@[38 - 40 hex 8 spaces
 PortExpander_I2C  switches(0x25); //@[20-28]
 
 // PINS
-byte buzzerPin = 11;
+
 byte led_pin_r = 3;
 byte led_pin_g = 5;
 byte led_pin_b = 6;
@@ -18,13 +20,9 @@ byte led_pin_b = 6;
 //*********************************************** Keypad
 String key_active = "";
 
+Buzzer buzzer = Buzzer(11);
 
-//buzzer
-int buzzTimeout=0;
-int buzzThreshhold = 1;
-int buzzLoop = 1;
-int buzzLoopCurrent = 1;
-int buzzTone = 1;
+Keypad keypad = Keypad(0x21, &buzzer); //@39
 
 //flood drain states
 int state_draining = 0;
@@ -87,6 +85,7 @@ int timestep = 0;
 int secondParts = 0;
 
 void setup() {
+  Serial.begin(9600);//serial for dev and monitoring
   Serial.println("");
   Serial.println("Booting...");
   //led setup
@@ -95,15 +94,12 @@ void setup() {
   pinMode(led_pin_b, OUTPUT);
   led(255,0,0);
 
-  // buzzer	
-  pinMode(buzzerPin, OUTPUT);
-  digitalWrite(buzzerPin,LOW);
   
-  
-  Serial.begin(9600);//serial for dev and monitoring
+
+
   
   Wire.begin();//for i2c
-  Wire.setClock(1000UL);
+  Wire.setClock(1000UL);//slow it down for longer max distance
   
   keypad.init();
   setup_lcd();
@@ -113,8 +109,13 @@ void setup() {
 //    for(int idx = 0; idx < 5; idx++ ) {
 //    bedState[idx] = 0;
 //  }
+  delay(50);
+  lcd.clear();
+  lcd.print("  Mr McGregor V1.2  ");
+  delay(2000);
   led(0,0,0);
-  buzzFor(20, 10, 1, 4);
+  buzzer.buzz(20, 10, 1, 4);
+  lcd.clear();
 }
 
 void led(int r, int g, int b){
@@ -160,9 +161,8 @@ void loadMemory(){
 void loop() {
   
   key_active = keypad.monitorKeypad();
-
+  buzzer.loop();
   monitorScreen();
-  monitorBuzzSound();
   monitorState();
  
 
@@ -301,7 +301,7 @@ void monitorState(){
     if (DrawnMenuStatus != "HOME"){
       DrawnMenuStatus = "HOME";
       lcd.clear();
-      lcd.print("  Mr McGregor V1.2  ");
+      
     }
     if(key_active == "C"){
       menuLevel = 1;
@@ -491,34 +491,8 @@ void lcdClearRow(byte col){
         lcd.setCursor(0,col);
         lcd.print("                    ");
 }
-void monitorBuzzSound(){
-  if (buzzTimeout > 0) {
-      buzzTimeout--;  
-     
-      if (buzzLoopCurrent < 0){
-        buzzLoopCurrent = buzzLoop;
-      }
-      if (buzzLoopCurrent >= buzzThreshhold){
-        analogWrite(buzzerPin, buzzTone);
-      } else {
-        analogWrite(buzzerPin, 0);
-      }
-      buzzLoopCurrent--;
-
-           
-  } else {
-      analogWrite(buzzerPin, 0);
-  }
-}
 
 
-void buzzFor(byte tone, byte ms,int t,int l){
-  buzzLoop = l;
-  buzzThreshhold = t;
-  buzzTone = tone;
-  buzzTimeout = ms;
-  analogWrite(buzzerPin, tone);
-}
 String getMenuId(){
   String out = "";
   for(int idx = 0; idx < menuLevel; idx++ ) {

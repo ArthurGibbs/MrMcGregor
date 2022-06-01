@@ -2,6 +2,7 @@
 #define KEYPAD_H
 #include <PortExpander_I2C.h>
 #include <Arduino.h>
+#include "Buzzer.h"
 
 class Keypad {
   
@@ -13,9 +14,10 @@ class Keypad {
     String key_number_buffer = "";
     bool key_number_buffer_active = false;
     PortExpander_I2C keyReader = NULL;
+    Buzzer* buzzer = NULL;
     
   public:
-    Keypad(byte pin);
+    Keypad(byte pin, Buzzer *buzzer);
     void init();
     String monitorKeypad();
     String getKeyDown();

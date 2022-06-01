@@ -2,10 +2,9 @@
 #include "Arduino.h"
 #include <PortExpander_I2C.h>
 
-//PortExpander_I2C keyReader(this->adddress);
-
-Keypad::Keypad(uint8_t i2c_addr) {
+Keypad::Keypad(uint8_t i2c_addr, Buzzer* buzzer) {
   this->keyReader = PortExpander_I2C(i2c_addr); 
+  this->buzzer = buzzer;
 }
 void Keypad::init() {
   Serial.print("Initializing keypad...");
@@ -35,13 +34,14 @@ String Keypad::getKeyDown(){
     }
     if (currentKeysPressed > 1){
       Serial.println("Multiple keypress!");
-      //buzzFor(255, 10, 1, 3);
+      buzzer->buzz(255, 10, 1, 3);
       return "";
     }
     if (currentKeysPressed == 0){
       return "";
     }
     if (currentKeysPressed == 1){
+      buzzer->buzz(50, 10, 0, 1);
       return currentKey;
     }
 }
@@ -82,6 +82,3 @@ void Keypad::disableNumeric(){
 int Keypad::getNumeric(){
   return key_number_buffer.toInt();
 }
-
-
- ////TODO
